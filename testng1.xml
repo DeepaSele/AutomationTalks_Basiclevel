@@ -1,0 +1,11 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="TestNG Suite">
+<listeners>
+<listener class-name="commonUtilities.ListenerImplementation"/>
+</listeners>
+  <test name="AutomationTalksTest">
+    <classes>
+      <class name="endtoEnd_TestCases.Endtoendtest01_Enterdataallpage"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

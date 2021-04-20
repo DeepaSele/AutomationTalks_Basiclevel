@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG Suite" duration-ms="61640" started-at="2021-04-15T22:35:27 EDT" finished-at="2021-04-15T22:36:29 EDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="61640" started-at="2021-04-15T22:35:27 EDT" finished-at="2021-04-15T22:36:29 EDT">
+      <class name="endtoEnd_TestCases.Endtoendtest01_Enterdataallpage">
+        <test-method status="PASS" signature="setupmethod()[pri:0, instance:endtoEnd_TestCases.Endtoendtest01_Enterdataallpage@12468a38]" name="setupmethod" is-config="true" duration-ms="9671" started-at="2021-04-15T22:35:28 EDT" finished-at="2021-04-15T22:35:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupmethod -->
+        <test-method status="PASS" signature="enterdataintoInsuranceforHonda()[pri:0, instance:endtoEnd_TestCases.Endtoendtest01_Enterdataallpage@12468a38]" name="enterdataintoInsuranceforHonda" duration-ms="51430" started-at="2021-04-15T22:35:37 EDT" finished-at="2021-04-15T22:36:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterdataintoInsuranceforHonda -->
+      </class> <!-- endtoEnd_TestCases.Endtoendtest01_Enterdataallpage -->
+    </test> <!-- Test -->
+  </suite> <!-- TestNG Suite -->
+</testng-results>

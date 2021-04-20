@@ -1,0 +1,123 @@
+Automation Basic level course
+==============================
+1.Created Maven project added dependencies on the POM.xml file
+2.Added page object package and this notepad file to Project level
+3.Sample application - Sampleapp.tricentis.com
+4.Created package in the main for the Pageobject model -With and without Page factory
+5.Located the Webelements by using FINDBY.. but We need driver to specify the element. For that we need to create constructor to pass driver via Page Inti element
+
+6.Created Base class for launch browser, url and Quit
+7. Usually Use System.Set property.. Instead of that get Webdrivermanager dependency from MavenRepo add to POM.xml
+And added the code
+
+8.Creating POM Class for 2nd page (Have 5 tabs)in the site 
+
+9.In this 2nd page we have Radio buttons and checkbox. For ex: Gender. I dont want to code for male and female. Write the code for generic same way like Checkbox. Add webelements in the LIST class
+-----Not write xpath for dropdowns------------
+
+10. Totally 3 tabs page object/locators created. Created BaseTest class(this class have common launchbrowser, url, quit with TestNG method)
+
+
+11.Hard coding the value of browser/url. So going to  Create Properties file
+12.We need 1 class to read values from properties file. Craete class under MAIN package -CommonUtilities.Make method Static
+
+13.In properties file broswer, url, username all are keys...If you pass this KEY as a Parameter we can use one method (no need to create more methods to call each reference)
+
+14.Validating 1st tc is Errorvalidation. Instead of creating all objects in the EndtoEnd class for every method we need to create objects for all class, because of this creating New class (Initializing all objs in the one class under Basepackage -created class)
+
+15.Already Testcase class extends baseclass we cant extend one more, so All objects class going to be a parent of Baseclass
+
+16. Created the method in the POM Class with Arguments/paramet. when calling the methodin actual testcase will pass the value in the method.
+
+17.Learned: Initialising the Driver should be after the browser and url opened. Object have to be created in the after url opeened because it will go to construction from there driver will insitante
+
+18.Added dependency of Extent Report in the pom.xml file -com.aventstack enter this string in the MVN REpo
+
+19/Created class ExtentReportSetup under common utilities package. In this class we will write a code for how to look like dark theme, name of the report,how presentable should be.
+
+20. All basic code like- how to look, how it shd be all are in the site 
+He copied all the basic code from the site.. this is give how it will look..Usually this is will be coded by Lead 
+
+21.Wrote the code based on the youtube video
+
+22.Setup report -1 time activity /Before test execution begin
+   Create tests ---> Before each tests
+   Attached screen shot - On failures
+   close report ----> After all test execution
+For above scenario we need ITESTLISTENER
+
+23. Make Setup method in Extent class - Return type. The return would be extentreport
+24.Created object in the InitializeobjectALlpage. Make it as static
+
+24. So Report and Attached screenshot all should be implement in (New Class created -ListenerImplementation)
+
+25. Under ExtendReportsetup class - extends all page object initializing. In extendreportsetup class we have one method setupextendreport, there we have one object created for (Extentreports)that reference configured in the All pageobjectinitilaize class
+
+26.We need to call Listener Class
+27. Usually we will run> as TestNg suite, but hereafter need to use TESTNG.XML file there u can add Listeners 
+28.After run refresh the project - Report will get generated with date and time
+
+29.Added Screenshot method in base class
+
+30.Added that static method in the listenerClass
+
+31. Added one failed TC's to the Testcase. We can write some simplesentence in the Report using Created object in ExtentTest
+Ex: Test.log(status.pass)this log will generate in the report.  
+32.But Im not able to add screenshot in the report. The line im getting error (Screenpath is null or empty) 
+
+33.Added common method for getting all values in reading dropdown 
+
+34.now creating one common method  to select the value from dropdown this method has been written in common method class
+
+35.For Dropdown field I created xpath with (node as select)not class,input node
+
+36. Created dynamic xpath for radio button and checkbox fields we get more values so i put them in List collectons ex:List<WebElement> 
+
+37. created one method for entering all data in the fields.right now we Hard coded the values to the method.
+This application we have NEXT button is there in all pages. Creating Next button in common method. 
+In future -If im validating error msg appears in the UI or not then i dont need Next button to click. Its all purpose to purpose thats the reason Next method created in seperated method.
+
+38. Created Testcase call all pageobject method class(Methods are written in each class). Executed all the steps as per in the POM
+
+39.Find the issue in the common method for dropdown, forget to add { bracket in the if conditions
+
+40.Creating new class for SELECTPRICEOPTION page, that page contains WEBTABLE. This application has static webtable,but dont get xpath id
+
+41.In Webtable Created Dynamic xpath of get price and print that price
+42.Created Dyanamic xpath for selecting options to select the plan
+43.Executed TC's without any issue
+
+44.Now from EXCEL sheet driving the data. Created seperate class for reading data from Excel and put into Hashmap. In excel added two more tc's data 
+
+45.Just run the excel class only to verify hashmap is executing the values
+
+46.Now adding that hashamp into class. Created obj in Main class and POM method also created hashmap
+47.Using GETmethod with KEY
+48.Executed Testng.xml
+
+49.Now add Sure fire plugin and Compliler plugin
+50.In Sure fire plugin there we have to give XML file name for EX: Testng.xml
+51.Now Run from right click> pom.xml > Maven Test
+52. Or we can run from Command prompt
+52.Adding this Project to GITHUB. Already I have credentials in GITHUB
+Creating new organisation/New repos in that GITHUB
+Get that URI
+Click on project > team >Share proj or SEARCH give GIT
+Click on Use or Creaete In parent folder
+Store that project in locally in the GIT
+Go to Project level > team > Commit> Got issue (NOT ABLE TO RESOLVE)
+
+53.INstalling GIT from https://gitforwindows.org/
+
+Downloaded git..Now i have GIT BASH and Git UI
+PUSHING CODE FROM ECLIPSE TO GITHUB
+open gitbash cmd prompt
+
+53. Try to download project from GIT TO Eclipse
+Eclipse> import> GIT> give Clone URI> GIT user id and password
+Give the path where the project to store in local machine. After if you see 3 option (When its not maven project)terminate it
+right click>Import > Maven project> give your local path
+
+
+
+
