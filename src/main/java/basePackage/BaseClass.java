@@ -72,7 +72,7 @@ public class BaseClass extends InitializeObjectforAllPages {
 	}
 	
 	//Quit browser
-//	@AfterMethod
+	@AfterMethod
 	public static void quitbrowser() {
 		driver.quit();
 	}

@@ -111,12 +111,20 @@ Go to Project level > team > Commit> Got issue (NOT ABLE TO RESOLVE)
 
 Downloaded git..Now i have GIT BASH and Git UI
 PUSHING CODE FROM ECLIPSE TO GITHUB
-open gitbash cmd prompt
+Go yo folder where the project is ther)right click >open gitbash cmd prompt > Added some git commands
+But finally im able to see the code in GITHUB
+
 
 53. Try to download project from GIT TO Eclipse
 Eclipse> import> GIT> give Clone URI> GIT user id and password
 Give the path where the project to store in local machine. After if you see 3 option (When its not maven project)terminate it
 right click>Import > Maven project> give your local path
+
+================================================CI/CD TOOLS=================================================================================
+
+54. download jenkins. Created new username and password
+
+
 
 
 
